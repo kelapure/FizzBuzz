@@ -12,5 +12,5 @@ Plan
  4. ~~Create a maven/gradle build to build a war file~~
  5. Push the webservice jar to Pivotal WebServices
     - Fork the Java Buildpack to support Java 8 
-    - cf push using the -b option to point to the forked buildpack
+    - cf push using the -b option to point to the [forked buildpack](https://github.com/kelapure/java-buildpack.git) 
  6. Delivery pipeline for promotion from staging to production
