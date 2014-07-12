@@ -11,8 +11,6 @@ import java.util.stream.Collectors;
 import org.hamcrest.collection.IsIterableContainingInOrder;
 import org.junit.Before;
 import org.junit.Test;
-import static org.hamcrest.CoreMatchers.*;
-import static org.junit.matchers.JUnitMatchers.*;
 
 import com.example.FizzBuzz;
 
