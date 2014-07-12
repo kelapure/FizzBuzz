@@ -3,6 +3,8 @@ package com.example.test;
 import static org.junit.Assert.assertThat;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
@@ -20,9 +22,11 @@ public class FizzBuzzTest {
 	public List<String> expectedOutput;
 	
 	@Before
-	public void setup() throws IOException {
+	public void setup() throws IOException, URISyntaxException {
+		
+		URL resourceUrl = getClass().getResource("/expected-output.txt");
 		expectedOutput = Files
-				.lines(Paths.get("resources", "expected-output.txt"))
+				.lines(Paths.get(resourceUrl.toURI()))
 				.map(s -> s.trim()).filter(s -> !s.isEmpty())
 				.collect(Collectors.toList());
 	}
