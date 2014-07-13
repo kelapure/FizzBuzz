@@ -24,7 +24,7 @@ __Plan__
     - Modify the CloudBees Jenkins build definition to deploy the war file to CloudFoundry
     - On a git commit, CloudBees Jenkins as a service builds the war, runs tests and pushes to http://spring-boot-fizzbuzz-kelapure.cfapps.io/fizzbuzz  
 
-_Note_
+__Note__
  - Commits have not been squashed. 
  - The promotion of the application across the different spaces (dev--> staging --> production) is a ToDo yet to be addressed
  
