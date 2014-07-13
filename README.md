@@ -10,7 +10,7 @@ Plan
  2. Create Implementation class that solves the problem
  3. Create JAX-RS web service that responds to a front end UI
  4. Create a maven/gradle build to build a war file
- 5. Push the webservice jar to Pivotal WebServices
+ 5. Push the rest webservice jar to Pivotal WebServices
     - Fork the Java Buildpack to support Java 8 
     - cf push using the -b option to point to the [forked java buildpack](https://github.com/kelapure/java-buildpack.git) 
     - See application pushed to dev space @ http://fizzbuzz-spring-boot.cfapps.io/fizzbuzz
