@@ -7,7 +7,7 @@ Write a program that prints the numbers from 1 to 100. But for multiples of thre
 
 __Architecture__
 
-This application was initially designed as standalone jar file, thereafter transformed to a spring boot application and ultimately became a web application i.e. war file. The code leverages the Java 8 lambda and streams support to solve the FizzBuzz problem. Continous Integration is achieved via the CloudBees-CloudFoundry Integration wherein a git push to the repo. results in a build being triggered and a deployment to CloudFoundry if the build is clean. 
+This application was initially designed as standalone jar file, thereafter transformed to a spring boot application and ultimately became a web application i.e. war file. The code leverages the Java 8 lambda and streams support to solve the FizzBuzz problem. Continous Integration is achieved via the CloudBees-CloudFoundry [Integration](https://cloudfoundry.cloudbees.com/index.html) service wherein a git push to the repo. results in a build being triggered on CloudBees and a deployment to CloudFoundry if the build is stable. 
 
 __Plan__
  1. Create Junit Tests to test the FizzBuzz Problem
