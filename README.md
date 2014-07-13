@@ -15,3 +15,5 @@ Plan
     - cf push using the -b option to point to the [forked buildpack](https://github.com/kelapure/java-buildpack.git) ~~
     - See application pushed to dev space @ http://fizzbuzz-spring-boot.cfapps.io/fizzbuzz
  6. Delivery pipeline for promotion from staging to production
+    - Fork the CloudBees CloudFoundry ClickStart https://github.com/kelapure/cloudfoundry-spring
+    - Change spring-boot project to output war file to overcome CloudBees inability to push jar files 
