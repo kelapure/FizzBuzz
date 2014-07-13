@@ -59,7 +59,9 @@
                 <configuration>
                     <reuseForks>false</reuseForks>
                     <forkCount>1</forkCount>
-                    <argLine>-verbose:class</argLine>
+                    <excludes>
+                        <exclude>%regex[org.springsource.cloudfoundry.mvc.services.*]</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
         </plugins>
