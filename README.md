@@ -9,6 +9,9 @@ __Architecture__
 
 This application was initially designed as standalone jar file, thereafter transformed to a spring boot application and ultimately became a web application i.e. war file. The code leverages the Java 8 lambda and streams support to solve the FizzBuzz problem. Continous Integration is achieved via the CloudBees-CloudFoundry [Integration](https://cloudfoundry.cloudbees.com/index.html) service wherein a git push to the repo. results in a build being triggered on CloudBees and a deployment to CloudFoundry if the build is stable. 
 
+> _Application Link on Pivotal Web Services_
+http://spring-boot-fizzbuzz-kelapure.cfapps.io/fizzbuzz
+
 __Plan__
  1. Create Junit Tests to test the FizzBuzz Problem
  2. Create Implementation class that solves the problem
@@ -26,7 +29,7 @@ __Plan__
 
 __Note__
  - Commits have not been squashed. 
- - The promotion of the application across the different spaces (dev--> staging --> production) is a ToDo yet to be addressed
+ - The promotion of the application across the different spaces (dev --> staging --> production) is a ToDo yet to be addressed
  
 
 
