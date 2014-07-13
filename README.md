@@ -17,5 +17,5 @@ Plan
  6. Continous Delivery pipeline for promotion 
     - Fork the CloudBees CloudFoundry ClickStart https://github.com/kelapure/cloudfoundry-spring
     - Change spring-boot project to output war file to overcome CloudBees inability to push jar files 
-    - Modify the CloudBees Jenkins build definition to deploy correctly to CloudFoundry
+    - Modify the CloudBees Jenkins build definition to deploy the war file to CloudFoundry
     - On a git commit, CloudBees Jenkins as a service builds the war, runs tests and pushes to http://spring-boot-fizzbuzz-kelapure.cfapps.io/fizzbuzz  
