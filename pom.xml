@@ -59,6 +59,7 @@
                 <configuration>
                     <reuseForks>false</reuseForks>
                     <forkCount>1</forkCount>
+                    <argLine>-verbose:class</argLine>
                 </configuration>
             </plugin>
         </plugins>
