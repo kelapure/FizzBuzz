@@ -5,11 +5,11 @@ Solve the FizzBuzz problem
 
 Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
 
-Architecture
+__Architecture__
 
 This application was initially designed as standalone jar file, thereafter transformed to a spring boot application and ultimately became a web application i.e. war file. The code leverages the Java 8 lambda and streams support to solve the FizzBuzz problem. Continous Integration is achieved via the CloudBees-CloudFoundry Integration wherein a git push to the repo. results in a build being triggered and a deployment to CloudFoundry if the build is clean. 
 
-Plan
+__Plan__
  1. Create Junit Tests to test the FizzBuzz Problem
  2. Create Implementation class that solves the problem
  3. Create JAX-RS web service that responds to a front end UI
@@ -24,7 +24,7 @@ Plan
     - Modify the CloudBees Jenkins build definition to deploy the war file to CloudFoundry
     - On a git commit, CloudBees Jenkins as a service builds the war, runs tests and pushes to http://spring-boot-fizzbuzz-kelapure.cfapps.io/fizzbuzz  
 
-Note
+_Note_
  - Commits have not been squashed. 
  - The promotion of the application across the different spaces (dev--> staging --> production) is a ToDo yet to be addressed
  
